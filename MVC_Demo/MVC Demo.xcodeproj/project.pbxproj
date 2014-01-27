@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF635BD81885BEFF00F83B24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF635BD71885BEFF00F83B24 /* Foundation.framework */; };
+		EF635BDA1885BEFF00F83B24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF635BD91885BEFF00F83B24 /* CoreGraphics.framework */; };
+		EF635BDC1885BEFF00F83B24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF635BDB1885BEFF00F83B24 /* UIKit.framework */; };
+		EF635BE21885BEFF00F83B24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF635BE01885BEFF00F83B24 /* InfoPlist.strings */; };
+		EF635BE41885BEFF00F83B24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635BE31885BEFF00F83B24 /* main.m */; };
+		EF635BE81885BEFF00F83B24 /* MVCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635BE71885BEFF00F83B24 /* MVCAppDelegate.m */; };
+		EF635BEB1885BEFF00F83B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF635BE91885BEFF00F83B24 /* Main.storyboard */; };
+		EF635BF01885BEFF00F83B24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF635BEF1885BEFF00F83B24 /* Images.xcassets */; };
+		EF635BF71885BEFF00F83B24 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF635BF61885BEFF00F83B24 /* XCTest.framework */; };
+		EF635BF81885BEFF00F83B24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF635BD71885BEFF00F83B24 /* Foundation.framework */; };
+		EF635BF91885BEFF00F83B24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF635BDB1885BEFF00F83B24 /* UIKit.framework */; };
+		EF635C011885BEFF00F83B24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF635BFF1885BEFF00F83B24 /* InfoPlist.strings */; };
+		EF635C031885BEFF00F83B24 /* MVC_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635C021885BEFF00F83B24 /* MVC_DemoTests.m */; };
+		EF635C0E1885BFE300F83B24 /* MVCRedditPost.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635C0D1885BFE300F83B24 /* MVCRedditPost.m */; };
+		EF635C111885C1DC00F83B24 /* MVCRedditTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635C101885C1DC00F83B24 /* MVCRedditTableViewController.m */; };
+		EF635C141885C66A00F83B24 /* MVCRedditPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635C131885C66A00F83B24 /* MVCRedditPostCell.m */; };
+		EF635C171885C7A300F83B24 /* MVCPostsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF635C161885C7A300F83B24 /* MVCPostsController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF635BFA1885BEFF00F83B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF635BCC1885BEFF00F83B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF635BD31885BEFF00F83B24;
+			remoteInfo = "MVC Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF635BD41885BEFF00F83B24 /* MVC Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF635BD71885BEFF00F83B24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF635BD91885BEFF00F83B24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF635BDB1885BEFF00F83B24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF635BDF1885BEFF00F83B24 /* MVC Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVC Demo-Info.plist"; sourceTree = "<group>"; };
+		EF635BE11885BEFF00F83B24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF635BE31885BEFF00F83B24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF635BE51885BEFF00F83B24 /* MVC Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVC Demo-Prefix.pch"; sourceTree = "<group>"; };
+		EF635BE61885BEFF00F83B24 /* MVCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCAppDelegate.h; sourceTree = "<group>"; };
+		EF635BE71885BEFF00F83B24 /* MVCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCAppDelegate.m; sourceTree = "<group>"; };
+		EF635BEA1885BEFF00F83B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF635BEF1885BEFF00F83B24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF635BF51885BEFF00F83B24 /* MVC DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF635BF61885BEFF00F83B24 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF635BFE1885BEFF00F83B24 /* MVC DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVC DemoTests-Info.plist"; sourceTree = "<group>"; };
+		EF635C001885BEFF00F83B24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF635C021885BEFF00F83B24 /* MVC_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVC_DemoTests.m; sourceTree = "<group>"; };
+		EF635C0C1885BFE300F83B24 /* MVCRedditPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCRedditPost.h; sourceTree = "<group>"; };
+		EF635C0D1885BFE300F83B24 /* MVCRedditPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCRedditPost.m; sourceTree = "<group>"; };
+		EF635C0F1885C1DC00F83B24 /* MVCRedditTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCRedditTableViewController.h; sourceTree = "<group>"; };
+		EF635C101885C1DC00F83B24 /* MVCRedditTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCRedditTableViewController.m; sourceTree = "<group>"; };
+		EF635C121885C66A00F83B24 /* MVCRedditPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCRedditPostCell.h; sourceTree = "<group>"; };
+		EF635C131885C66A00F83B24 /* MVCRedditPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCRedditPostCell.m; sourceTree = "<group>"; };
+		EF635C151885C7A300F83B24 /* MVCPostsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVCPostsController.h; sourceTree = "<group>"; };
+		EF635C161885C7A300F83B24 /* MVCPostsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVCPostsController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF635BD11885BEFF00F83B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF635BDA1885BEFF00F83B24 /* CoreGraphics.framework in Frameworks */,
+				EF635BDC1885BEFF00F83B24 /* UIKit.framework in Frameworks */,
+				EF635BD81885BEFF00F83B24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF635BF21885BEFF00F83B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF635BF71885BEFF00F83B24 /* XCTest.framework in Frameworks */,
+				EF635BF91885BEFF00F83B24 /* UIKit.framework in Frameworks */,
+				EF635BF81885BEFF00F83B24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF635BCB1885BEFF00F83B24 = {
+			isa = PBXGroup;
+			children = (
+				EF635BDD1885BEFF00F83B24 /* MVC Demo */,
+				EF635BFC1885BEFF00F83B24 /* MVC DemoTests */,
+				EF635BD61885BEFF00F83B24 /* Frameworks */,
+				EF635BD51885BEFF00F83B24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF635BD51885BEFF00F83B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF635BD41885BEFF00F83B24 /* MVC Demo.app */,
+				EF635BF51885BEFF00F83B24 /* MVC DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF635BD61885BEFF00F83B24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF635BD71885BEFF00F83B24 /* Foundation.framework */,
+				EF635BD91885BEFF00F83B24 /* CoreGraphics.framework */,
+				EF635BDB1885BEFF00F83B24 /* UIKit.framework */,
+				EF635BF61885BEFF00F83B24 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF635BDD1885BEFF00F83B24 /* MVC Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EF635BE61885BEFF00F83B24 /* MVCAppDelegate.h */,
+				EF635BE71885BEFF00F83B24 /* MVCAppDelegate.m */,
+				EF635BE91885BEFF00F83B24 /* Main.storyboard */,
+				EF635BEF1885BEFF00F83B24 /* Images.xcassets */,
+				EF635BDE1885BEFF00F83B24 /* Supporting Files */,
+				EF635C0C1885BFE300F83B24 /* MVCRedditPost.h */,
+				EF635C0D1885BFE300F83B24 /* MVCRedditPost.m */,
+				EF635C0F1885C1DC00F83B24 /* MVCRedditTableViewController.h */,
+				EF635C101885C1DC00F83B24 /* MVCRedditTableViewController.m */,
+				EF635C121885C66A00F83B24 /* MVCRedditPostCell.h */,
+				EF635C131885C66A00F83B24 /* MVCRedditPostCell.m */,
+				EF635C151885C7A300F83B24 /* MVCPostsController.h */,
+				EF635C161885C7A300F83B24 /* MVCPostsController.m */,
+			);
+			path = "MVC Demo";
+			sourceTree = "<group>";
+		};
+		EF635BDE1885BEFF00F83B24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF635BDF1885BEFF00F83B24 /* MVC Demo-Info.plist */,
+				EF635BE01885BEFF00F83B24 /* InfoPlist.strings */,
+				EF635BE31885BEFF00F83B24 /* main.m */,
+				EF635BE51885BEFF00F83B24 /* MVC Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF635BFC1885BEFF00F83B24 /* MVC DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF635C021885BEFF00F83B24 /* MVC_DemoTests.m */,
+				EF635BFD1885BEFF00F83B24 /* Supporting Files */,
+			);
+			path = "MVC DemoTests";
+			sourceTree = "<group>";
+		};
+		EF635BFD1885BEFF00F83B24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF635BFE1885BEFF00F83B24 /* MVC DemoTests-Info.plist */,
+				EF635BFF1885BEFF00F83B24 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF635BD31885BEFF00F83B24 /* MVC Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF635C061885BEFF00F83B24 /* Build configuration list for PBXNativeTarget "MVC Demo" */;
+			buildPhases = (
+				EF635BD01885BEFF00F83B24 /* Sources */,
+				EF635BD11885BEFF00F83B24 /* Frameworks */,
+				EF635BD21885BEFF00F83B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MVC Demo";
+			productName = "MVC Demo";
+			productReference = EF635BD41885BEFF00F83B24 /* MVC Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF635BF41885BEFF00F83B24 /* MVC DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF635C091885BEFF00F83B24 /* Build configuration list for PBXNativeTarget "MVC DemoTests" */;
+			buildPhases = (
+				EF635BF11885BEFF00F83B24 /* Sources */,
+				EF635BF21885BEFF00F83B24 /* Frameworks */,
+				EF635BF31885BEFF00F83B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF635BFB1885BEFF00F83B24 /* PBXTargetDependency */,
+			);
+			name = "MVC DemoTests";
+			productName = "MVC DemoTests";
+			productReference = EF635BF51885BEFF00F83B24 /* MVC DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF635BCC1885BEFF00F83B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MVC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EF635BF41885BEFF00F83B24 = {
+						TestTargetID = EF635BD31885BEFF00F83B24;
+					};
+				};
+			};
+			buildConfigurationList = EF635BCF1885BEFF00F83B24 /* Build configuration list for PBXProject "MVC Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF635BCB1885BEFF00F83B24;
+			productRefGroup = EF635BD51885BEFF00F83B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF635BD31885BEFF00F83B24 /* MVC Demo */,
+				EF635BF41885BEFF00F83B24 /* MVC DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF635BD21885BEFF00F83B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF635BF01885BEFF00F83B24 /* Images.xcassets in Resources */,
+				EF635BE21885BEFF00F83B24 /* InfoPlist.strings in Resources */,
+				EF635BEB1885BEFF00F83B24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF635BF31885BEFF00F83B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF635C011885BEFF00F83B24 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF635BD01885BEFF00F83B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF635C171885C7A300F83B24 /* MVCPostsController.m in Sources */,
+				EF635BE41885BEFF00F83B24 /* main.m in Sources */,
+				EF635C0E1885BFE300F83B24 /* MVCRedditPost.m in Sources */,
+				EF635C111885C1DC00F83B24 /* MVCRedditTableViewController.m in Sources */,
+				EF635BE81885BEFF00F83B24 /* MVCAppDelegate.m in Sources */,
+				EF635C141885C66A00F83B24 /* MVCRedditPostCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF635BF11885BEFF00F83B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF635C031885BEFF00F83B24 /* MVC_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF635BFB1885BEFF00F83B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF635BD31885BEFF00F83B24 /* MVC Demo */;
+			targetProxy = EF635BFA1885BEFF00F83B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF635BE01885BEFF00F83B24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF635BE11885BEFF00F83B24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF635BE91885BEFF00F83B24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF635BEA1885BEFF00F83B24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF635BFF1885BEFF00F83B24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF635C001885BEFF00F83B24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF635C041885BEFF00F83B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF635C051885BEFF00F83B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF635C071885BEFF00F83B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MVC Demo/MVC Demo-Prefix.pch";
+				INFOPLIST_FILE = "MVC Demo/MVC Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF635C081885BEFF00F83B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MVC Demo/MVC Demo-Prefix.pch";
+				INFOPLIST_FILE = "MVC Demo/MVC Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF635C0A1885BEFF00F83B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MVC Demo.app/MVC Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MVC Demo/MVC Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MVC DemoTests/MVC DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF635C0B1885BEFF00F83B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MVC Demo.app/MVC Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MVC Demo/MVC Demo-Prefix.pch";
+				INFOPLIST_FILE = "MVC DemoTests/MVC DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF635BCF1885BEFF00F83B24 /* Build configuration list for PBXProject "MVC Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF635C041885BEFF00F83B24 /* Debug */,
+				EF635C051885BEFF00F83B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF635C061885BEFF00F83B24 /* Build configuration list for PBXNativeTarget "MVC Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF635C071885BEFF00F83B24 /* Debug */,
+				EF635C081885BEFF00F83B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF635C091885BEFF00F83B24 /* Build configuration list for PBXNativeTarget "MVC DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF635C0A1885BEFF00F83B24 /* Debug */,
+				EF635C0B1885BEFF00F83B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF635BCC1885BEFF00F83B24 /* Project object */;
+}
