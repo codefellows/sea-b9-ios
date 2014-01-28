@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomCollectionCell : UICollectionViewCell
+
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *userImageVIew;
+@property (weak, nonatomic) IBOutlet UIImageView *userImageView;
+@property (readwrite, nonatomic) BOOL isDownloading;
 
 @end

@@ -13,9 +13,8 @@
 @interface ViewController () <UICollectionViewDataSource,UICollectionViewDelegate,UISearchBarDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-
+@property (strong, nonatomic) NSOperationQueue *downloadQueue;
 @property (strong,nonatomic) NSMutableArray *usersArray;
-
 
 @end
 
@@ -25,14 +24,16 @@
 {
     [super viewDidLoad];
     
-    self.usersArray = [NSMutableArray new];
+    _downloadQueue = [NSOperationQueue new];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadFinishedNotification:) name:DOWNLOAD_NOTIFICATION object:nil];
     
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
     self.searchBar.delegate = self;
     
-	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -46,13 +47,18 @@
     
     GitUser *user = self.usersArray[indexPath.row];
     
-    
-    cell.backgroundColor = [UIColor redColor];
-    
     CustomCollectionCell *customCell = (CustomCollectionCell *)cell;
+    customCell.nameLabel.text = user.name;
     
-    //customCell.nameLabel.text = user.name;
-    
+    if (user.userImage) {
+        customCell.userImageView.image = user.userImage;
+    } else {
+        if (!user.isDownloading) {
+            [user downloadAvatar];
+            customCell.isDownloading = YES;
+            customCell.backgroundColor = [UIColor redColor];
+        }
+    }
     
     return customCell;
     
@@ -60,6 +66,8 @@
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
+    self.usersArray = [NSMutableArray new];
+    
     [searchBar resignFirstResponder];
     [self searchForUser:searchBar.text];
 }
@@ -74,30 +82,52 @@
     
     NSError *error;
     NSURL *searchURL = [NSURL URLWithString:searchString];
-    NSData *searchData = [NSData dataWithContentsOfURL:searchURL];
-    NSDictionary *searchDictionary =[NSJSONSerialization JSONObjectWithData:searchData options:NSJSONReadingMutableContainers error:&error];
     
-    NSArray *searchArray = searchDictionary[@"items"];
-    
-    NSLog(@"%@",searchArray);
-    
-    [self createUsersFromArray:searchArray];
+    @try {
+        NSData *searchData = [NSData dataWithContentsOfURL:searchURL];
+        NSDictionary *searchDictionary =[NSJSONSerialization JSONObjectWithData:searchData options:NSJSONReadingMutableContainers|NSJSONReadingAllowFragments error:&error];
+        NSArray *searchArray = searchDictionary[@"items"];
+//        NSLog(@"%@",searchArray);
+        [self createUsersFromArray:searchArray];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"API Limit Reached? %@", exception.debugDescription);
+        if (error) {
+            NSLog(@"Error: %@", error.debugDescription);
+        }
+    }
     
 }
 
 -(void)createUsersFromArray:(NSArray *)searchArray
 {
+    
     for (NSDictionary *dictionary in searchArray)
     {
         GitUser *user = [GitUser new];
         user.name = dictionary[@"login"];
         user.imageURL = dictionary[@"avatar_url"];
-        
+        user.downloadQueue = _downloadQueue;
         [self.usersArray addObject:user];
-                                   
     }
     
     [self.collectionView reloadData];
 }
 
+#pragma mark - NSNotificationCenter
+
+- (void)downloadFinishedNotification:(NSNotification *)note
+{
+    id sender = [[note userInfo] objectForKey:@"user"];
+    
+    if ([sender isKindOfClass:[GitUser class]]) {
+        NSLog(@"Download Finished For User: %@", sender);
+        NSIndexPath *userPath = [NSIndexPath indexPathForItem:[_usersArray indexOfObject:sender] inSection:0];
+        CustomCollectionCell *cell = [_collectionView cellForItemAtIndexPath:userPath];
+        cell.isDownloading = NO;
+        [_collectionView reloadItemsAtIndexPaths:@[userPath]];
+    } else {
+        NSLog(@"Sender was not a GitUser");
+    }
+}
 @end
