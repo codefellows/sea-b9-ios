@@ -41,6 +41,8 @@
     NSString *myURL = [NSString stringWithFormat:GITHUB_OAUTH_URL,GITHUB_CLIENT_ID,GITHUB_REDIRECT,@"user,repo"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:myURL]];
 }
+\
+
 
 -(void)handleCallBackURL:(NSURL *)url
 {
@@ -64,7 +66,7 @@
     
     self.accessToken = [self convertResponseIntoToken:responseData];
     
-    [self fetchUsersRepos];
+    [self checkOAuthToken];
     
     
 }
@@ -79,7 +81,27 @@
     NSError *error;
     NSMutableDictionary *repoDictionary = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&error];
     
+    if (error)
+    {
+        NSLog(@"%@", error.userInfo);
+    }
+    
+    
+}
+
+-(void)checkOAuthToken
+{
+    NSString *authURL = [NSString stringWithFormat:@"https://api.github.com/applications/%@/tokens/%@?username=%@&password=%@",];
+    NSURL *url = [NSURL URLWithString:authURL];
+    
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    
+    NSError *error;
+    
+    NSMutableDictionary *repoDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
+    
     NSLog(@"%@",repoDictionary);
+    
     
     
 }
