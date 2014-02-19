@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFA171A418B49B030011932D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA171A318B49B030011932D /* Foundation.framework */; };
+		EFA171A618B49B030011932D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA171A518B49B030011932D /* CoreGraphics.framework */; };
+		EFA171A818B49B030011932D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA171A718B49B030011932D /* UIKit.framework */; };
+		EFA171AA18B49B030011932D /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA171A918B49B030011932D /* SpriteKit.framework */; };
+		EFA171B018B49B030011932D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFA171AE18B49B030011932D /* InfoPlist.strings */; };
+		EFA171B218B49B030011932D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171B118B49B030011932D /* main.m */; };
+		EFA171B618B49B030011932D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171B518B49B030011932D /* AppDelegate.m */; };
+		EFA171B918B49B030011932D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA171B718B49B030011932D /* Main_iPhone.storyboard */; };
+		EFA171BC18B49B030011932D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA171BA18B49B030011932D /* Main_iPad.storyboard */; };
+		EFA171BF18B49B030011932D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171BE18B49B030011932D /* ViewController.m */; };
+		EFA171C218B49B030011932D /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171C118B49B030011932D /* MyScene.m */; };
+		EFA171C418B49B030011932D /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA171C318B49B030011932D /* Spaceship.png */; };
+		EFA171C618B49B030011932D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA171C518B49B030011932D /* Images.xcassets */; };
+		EFA171CD18B49B030011932D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA171CC18B49B030011932D /* XCTest.framework */; };
+		EFA171CE18B49B030011932D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA171A318B49B030011932D /* Foundation.framework */; };
+		EFA171CF18B49B030011932D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA171A718B49B030011932D /* UIKit.framework */; };
+		EFA171D718B49B030011932D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFA171D518B49B030011932D /* InfoPlist.strings */; };
+		EFA171D918B49B030011932D /* Hole_in_the_Wall_TestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171D818B49B030011932D /* Hole_in_the_Wall_TestsTests.m */; };
+		EFA171E518B49B210011932D /* Wall.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171E418B49B210011932D /* Wall.m */; };
+		EFA171E818B49B2B0011932D /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171E718B49B2B0011932D /* Hole.m */; };
+		EFA171EB18B49B380011932D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171EA18B49B380011932D /* Player.m */; };
+		EFA171EE18B49B410011932D /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA171ED18B49B410011932D /* Level.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFA171D018B49B030011932D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFA1719818B49B030011932D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFA1719F18B49B030011932D;
+			remoteInfo = "Hole in the Wall Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFA171A018B49B030011932D /* Hole in the Wall Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hole in the Wall Tests.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA171A318B49B030011932D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFA171A518B49B030011932D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFA171A718B49B030011932D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFA171A918B49B030011932D /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		EFA171AD18B49B030011932D /* Hole in the Wall Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hole in the Wall Tests-Info.plist"; sourceTree = "<group>"; };
+		EFA171AF18B49B030011932D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFA171B118B49B030011932D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFA171B318B49B030011932D /* Hole in the Wall Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hole in the Wall Tests-Prefix.pch"; sourceTree = "<group>"; };
+		EFA171B418B49B030011932D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFA171B518B49B030011932D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFA171B818B49B030011932D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EFA171BB18B49B030011932D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EFA171BD18B49B030011932D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFA171BE18B49B030011932D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFA171C018B49B030011932D /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		EFA171C118B49B030011932D /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		EFA171C318B49B030011932D /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EFA171C518B49B030011932D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFA171CB18B49B030011932D /* Hole in the Wall TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hole in the Wall TestsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA171CC18B49B030011932D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EFA171D418B49B030011932D /* Hole in the Wall TestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hole in the Wall TestsTests-Info.plist"; sourceTree = "<group>"; };
+		EFA171D618B49B030011932D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFA171D818B49B030011932D /* Hole_in_the_Wall_TestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hole_in_the_Wall_TestsTests.m; sourceTree = "<group>"; };
+		EFA171E318B49B210011932D /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wall.h; path = Models/Wall.h; sourceTree = "<group>"; };
+		EFA171E418B49B210011932D /* Wall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wall.m; path = Models/Wall.m; sourceTree = "<group>"; };
+		EFA171E618B49B2B0011932D /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hole.h; sourceTree = "<group>"; };
+		EFA171E718B49B2B0011932D /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hole.m; sourceTree = "<group>"; };
+		EFA171E918B49B380011932D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		EFA171EA18B49B380011932D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		EFA171EC18B49B410011932D /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		EFA171ED18B49B410011932D /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFA1719D18B49B030011932D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA171A618B49B030011932D /* CoreGraphics.framework in Frameworks */,
+				EFA171A818B49B030011932D /* UIKit.framework in Frameworks */,
+				EFA171AA18B49B030011932D /* SpriteKit.framework in Frameworks */,
+				EFA171A418B49B030011932D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA171C818B49B030011932D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA171CD18B49B030011932D /* XCTest.framework in Frameworks */,
+				EFA171CF18B49B030011932D /* UIKit.framework in Frameworks */,
+				EFA171CE18B49B030011932D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFA1719718B49B030011932D = {
+			isa = PBXGroup;
+			children = (
+				EFA171AB18B49B030011932D /* Hole in the Wall Tests */,
+				EFA171D218B49B030011932D /* Hole in the Wall TestsTests */,
+				EFA171A218B49B030011932D /* Frameworks */,
+				EFA171A118B49B030011932D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFA171A118B49B030011932D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFA171A018B49B030011932D /* Hole in the Wall Tests.app */,
+				EFA171CB18B49B030011932D /* Hole in the Wall TestsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFA171A218B49B030011932D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFA171A318B49B030011932D /* Foundation.framework */,
+				EFA171A518B49B030011932D /* CoreGraphics.framework */,
+				EFA171A718B49B030011932D /* UIKit.framework */,
+				EFA171A918B49B030011932D /* SpriteKit.framework */,
+				EFA171CC18B49B030011932D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFA171AB18B49B030011932D /* Hole in the Wall Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EFA171E218B49B0A0011932D /* Models */,
+				EFA171B418B49B030011932D /* AppDelegate.h */,
+				EFA171B518B49B030011932D /* AppDelegate.m */,
+				EFA171B718B49B030011932D /* Main_iPhone.storyboard */,
+				EFA171BA18B49B030011932D /* Main_iPad.storyboard */,
+				EFA171BD18B49B030011932D /* ViewController.h */,
+				EFA171BE18B49B030011932D /* ViewController.m */,
+				EFA171C018B49B030011932D /* MyScene.h */,
+				EFA171C118B49B030011932D /* MyScene.m */,
+				EFA171C318B49B030011932D /* Spaceship.png */,
+				EFA171C518B49B030011932D /* Images.xcassets */,
+				EFA171AC18B49B030011932D /* Supporting Files */,
+			);
+			path = "Hole in the Wall Tests";
+			sourceTree = "<group>";
+		};
+		EFA171AC18B49B030011932D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFA171AD18B49B030011932D /* Hole in the Wall Tests-Info.plist */,
+				EFA171AE18B49B030011932D /* InfoPlist.strings */,
+				EFA171B118B49B030011932D /* main.m */,
+				EFA171B318B49B030011932D /* Hole in the Wall Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFA171D218B49B030011932D /* Hole in the Wall TestsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFA171D818B49B030011932D /* Hole_in_the_Wall_TestsTests.m */,
+				EFA171D318B49B030011932D /* Supporting Files */,
+			);
+			path = "Hole in the Wall TestsTests";
+			sourceTree = "<group>";
+		};
+		EFA171D318B49B030011932D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFA171D418B49B030011932D /* Hole in the Wall TestsTests-Info.plist */,
+				EFA171D518B49B030011932D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFA171E218B49B0A0011932D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFA171E318B49B210011932D /* Wall.h */,
+				EFA171E418B49B210011932D /* Wall.m */,
+				EFA171E618B49B2B0011932D /* Hole.h */,
+				EFA171E718B49B2B0011932D /* Hole.m */,
+				EFA171E918B49B380011932D /* Player.h */,
+				EFA171EA18B49B380011932D /* Player.m */,
+				EFA171EC18B49B410011932D /* Level.h */,
+				EFA171ED18B49B410011932D /* Level.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFA1719F18B49B030011932D /* Hole in the Wall Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFA171DC18B49B030011932D /* Build configuration list for PBXNativeTarget "Hole in the Wall Tests" */;
+			buildPhases = (
+				EFA1719C18B49B030011932D /* Sources */,
+				EFA1719D18B49B030011932D /* Frameworks */,
+				EFA1719E18B49B030011932D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hole in the Wall Tests";
+			productName = "Hole in the Wall Tests";
+			productReference = EFA171A018B49B030011932D /* Hole in the Wall Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFA171CA18B49B030011932D /* Hole in the Wall TestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFA171DF18B49B030011932D /* Build configuration list for PBXNativeTarget "Hole in the Wall TestsTests" */;
+			buildPhases = (
+				EFA171C718B49B030011932D /* Sources */,
+				EFA171C818B49B030011932D /* Frameworks */,
+				EFA171C918B49B030011932D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFA171D118B49B030011932D /* PBXTargetDependency */,
+			);
+			name = "Hole in the Wall TestsTests";
+			productName = "Hole in the Wall TestsTests";
+			productReference = EFA171CB18B49B030011932D /* Hole in the Wall TestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFA1719818B49B030011932D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EFA171CA18B49B030011932D = {
+						TestTargetID = EFA1719F18B49B030011932D;
+					};
+				};
+			};
+			buildConfigurationList = EFA1719B18B49B030011932D /* Build configuration list for PBXProject "Hole in the Wall Tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFA1719718B49B030011932D;
+			productRefGroup = EFA171A118B49B030011932D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFA1719F18B49B030011932D /* Hole in the Wall Tests */,
+				EFA171CA18B49B030011932D /* Hole in the Wall TestsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFA1719E18B49B030011932D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA171C418B49B030011932D /* Spaceship.png in Resources */,
+				EFA171C618B49B030011932D /* Images.xcassets in Resources */,
+				EFA171BC18B49B030011932D /* Main_iPad.storyboard in Resources */,
+				EFA171B918B49B030011932D /* Main_iPhone.storyboard in Resources */,
+				EFA171B018B49B030011932D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA171C918B49B030011932D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA171D718B49B030011932D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFA1719C18B49B030011932D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA171E518B49B210011932D /* Wall.m in Sources */,
+				EFA171E818B49B2B0011932D /* Hole.m in Sources */,
+				EFA171EE18B49B410011932D /* Level.m in Sources */,
+				EFA171C218B49B030011932D /* MyScene.m in Sources */,
+				EFA171BF18B49B030011932D /* ViewController.m in Sources */,
+				EFA171B618B49B030011932D /* AppDelegate.m in Sources */,
+				EFA171EB18B49B380011932D /* Player.m in Sources */,
+				EFA171B218B49B030011932D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA171C718B49B030011932D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA171D918B49B030011932D /* Hole_in_the_Wall_TestsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFA171D118B49B030011932D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFA1719F18B49B030011932D /* Hole in the Wall Tests */;
+			targetProxy = EFA171D018B49B030011932D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFA171AE18B49B030011932D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFA171AF18B49B030011932D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EFA171B718B49B030011932D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFA171B818B49B030011932D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EFA171BA18B49B030011932D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFA171BB18B49B030011932D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EFA171D518B49B030011932D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFA171D618B49B030011932D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFA171DA18B49B030011932D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFA171DB18B49B030011932D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFA171DD18B49B030011932D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hole in the Wall Tests/Hole in the Wall Tests-Prefix.pch";
+				INFOPLIST_FILE = "Hole in the Wall Tests/Hole in the Wall Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EFA171DE18B49B030011932D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hole in the Wall Tests/Hole in the Wall Tests-Prefix.pch";
+				INFOPLIST_FILE = "Hole in the Wall Tests/Hole in the Wall Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EFA171E018B49B030011932D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hole in the Wall Tests.app/Hole in the Wall Tests";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hole in the Wall Tests/Hole in the Wall Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hole in the Wall TestsTests/Hole in the Wall TestsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EFA171E118B49B030011932D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Hole in the Wall Tests.app/Hole in the Wall Tests";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hole in the Wall Tests/Hole in the Wall Tests-Prefix.pch";
+				INFOPLIST_FILE = "Hole in the Wall TestsTests/Hole in the Wall TestsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFA1719B18B49B030011932D /* Build configuration list for PBXProject "Hole in the Wall Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA171DA18B49B030011932D /* Debug */,
+				EFA171DB18B49B030011932D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFA171DC18B49B030011932D /* Build configuration list for PBXNativeTarget "Hole in the Wall Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA171DD18B49B030011932D /* Debug */,
+				EFA171DE18B49B030011932D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFA171DF18B49B030011932D /* Build configuration list for PBXNativeTarget "Hole in the Wall TestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFA171E018B49B030011932D /* Debug */,
+				EFA171E118B49B030011932D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFA1719818B49B030011932D /* Project object */;
+}
