@@ -13,7 +13,7 @@
 - (instancetype)initWithHole:(Hole *)hole
 {
     if (self = [super init]) {
-        /* Setup your custom properties here */
+        self.hole = hole;
     }
     
     return self;

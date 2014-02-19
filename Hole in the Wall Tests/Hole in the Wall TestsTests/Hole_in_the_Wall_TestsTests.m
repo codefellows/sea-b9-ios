@@ -16,6 +16,8 @@
 {
     NSInteger nextLevel;
 }
+@property (nonatomic) NSInteger testNumber;
+
 @end
 
 @implementation Hole_in_the_Wall_TestsTests
@@ -24,11 +26,13 @@
 {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.testNumber = 502;
+    
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+//    self.testNumber = 502;
     [super tearDown];
 }
 
@@ -42,12 +46,11 @@
 
 - (void)testCorrectLevelNumber
 {
-
-    Level *level = [Level levelNumber:205];
+    Level *level = [Level levelNumber:self.testNumber];
     
     NSString *failureMessage = @"+ levelNumber: should return a level with the suppied number";
-    
-    XCTAssertEqual(level.number, 502, @"%@", failureMessage);
+
+    XCTAssertEqual(level.number, self.testNumber, @"%@", failureMessage);
 }
 
 - (void)testMaxPlayerCount

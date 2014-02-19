@@ -25,7 +25,7 @@
 
 - (void)addPlayer:(Player *)player
 {
-    if (_players.count <= 4) {
+    if (_players.count < 4) {
         [self.players addObject:player];        
     }
 }
