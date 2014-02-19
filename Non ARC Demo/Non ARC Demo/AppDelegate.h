@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (void)logOutObject:(id)object;
+
 @end

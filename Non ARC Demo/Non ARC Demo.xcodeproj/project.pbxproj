@@ -12,9 +12,9 @@
 		EF9BC2AC18AD422600B258DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9BC2AB18AD422600B258DB /* UIKit.framework */; };
 		EF9BC2B218AD422600B258DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF9BC2B018AD422600B258DB /* InfoPlist.strings */; };
 		EF9BC2B418AD422600B258DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9BC2B318AD422600B258DB /* main.m */; };
-		EF9BC2B818AD422600B258DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9BC2B718AD422600B258DB /* AppDelegate.m */; };
+		EF9BC2B818AD422600B258DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9BC2B718AD422600B258DB /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EF9BC2BB18AD422600B258DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9BC2B918AD422600B258DB /* Main.storyboard */; };
-		EF9BC2BE18AD422600B258DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9BC2BD18AD422600B258DB /* ViewController.m */; };
+		EF9BC2BE18AD422600B258DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9BC2BD18AD422600B258DB /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EF9BC2C018AD422600B258DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9BC2BF18AD422600B258DB /* Images.xcassets */; };
 		EF9BC2C718AD422700B258DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9BC2C618AD422700B258DB /* XCTest.framework */; };
 		EF9BC2C818AD422700B258DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9BC2A718AD422600B258DB /* Foundation.framework */; };
@@ -378,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Non ARC Demo/Non ARC Demo-Prefix.pch";
 				INFOPLIST_FILE = "Non ARC Demo/Non ARC Demo-Info.plist";
@@ -391,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Non ARC Demo/Non ARC Demo-Prefix.pch";
 				INFOPLIST_FILE = "Non ARC Demo/Non ARC Demo-Info.plist";
@@ -460,6 +462,7 @@
 				EF9BC2D818AD422700B258DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF9BC2D918AD422700B258DB /* Build configuration list for PBXNativeTarget "Non ARC DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +471,7 @@
 				EF9BC2DB18AD422700B258DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
